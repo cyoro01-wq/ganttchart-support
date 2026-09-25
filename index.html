@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ガントチャート - 工程表 サポート</title>
+<style>
+:root { --fg:#1d1d1f; --muted:#6e6e73; --bg:#ffffff; --card:#f5f5f7; --accent:#287adb; }
+@media (prefers-color-scheme: dark) { :root { --fg:#f5f5f7; --muted:#a1a1a6; --bg:#000; --card:#1c1c1e; --accent:#4ea1ff; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font-family:-apple-system, "Hiragino Sans", "Helvetica Neue", sans-serif; line-height:1.75; }
+main { max-width:760px; margin:0 auto; padding:40px 20px 64px; }
+h1 { font-size:1.8rem; margin:0 0 4px; }
+h2 { font-size:1.15rem; margin:32px 0 8px; }
+.lead { color:var(--muted); margin-top:0; }
+.card { background:var(--card); border-radius:14px; padding:16px 20px; margin:16px 0; }
+a { color:var(--accent); }
+footer { margin-top:48px; color:var(--muted); font-size:.85rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>ガントチャート - 工程表</h1>
+<p class="lead">iPhone・iPad用のガントチャート（工程表）アプリのサポートページです。</p>
+
+<div class="card">
+<strong>お問い合わせ</strong><br>
+不具合のご報告・ご要望は <a href="mailto:cyoro01@gmail.com">cyoro01@gmail.com</a> までお送りください。
+ご利用の端末（iPhone / iPad）とiOSのバージョンを添えていただけると助かります。
+</div>
+
+<h2>主な機能</h2>
+<ul>
+<li>プロジェクトごとのガントチャート表示（日・週・月の切り替え）</li>
+<li>バーの長押しドラッグで日程を移動、両端のドラッグで期間を変更</li>
+<li>タスクの完了チェック、進捗率、マイルストーン、担当者、メモ</li>
+<li>タスクごとのチェックリスト（達成率を進捗に連動可能）</li>
+<li>開始日・終了日に合わせたリマインド通知</li>
+<li>Googleドライブを使ったプロジェクトの共有・同期</li>
+</ul>
+
+<h2>よくある質問</h2>
+<p><strong>Q. 通知が届きません。</strong><br>
+設定アプリ →「通知」→「ガントチャート」で通知が許可されているか確認してください。完了（進捗100%）にしたタスクと、過去の日時のリマインドは通知されません。</p>
+
+<p><strong>Q. 他の人とプロジェクトを共有するには？</strong><br>
+プロジェクト画面右上の共有ボタンから「Googleドライブに保存して共有を開始」を選び、保存先にGoogleドライブを選びます。次にGoogleドライブアプリでそのファイルを相手に「編集者」として共有し、相手はアプリのプロジェクト一覧の読み込みボタンからそのファイルを開きます。</p>
+
+<p><strong>Q. 保存先に「Googleドライブ」が表示されません。</strong><br>
+Googleドライブアプリをインストールしてログインし、ファイルアプリの「ブラウズ」→「…」→「編集」でGoogleドライブをオンにしてください。</p>
+
+<p><strong>Q. 共有した内容がすぐに反映されません。</strong><br>
+相手の端末に届くまでの時間はGoogleドライブアプリの同期状況によります（通常は数秒〜数十秒）。Googleドライブアプリを一度開くと早く反映されることがあります。</p>
+
+<p><strong>Q. データはどこに保存されますか？</strong><br>
+すべてお使いの端末内に保存されます。詳しくは<a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/cyoro01-wq/ganttchart-support/main/privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+
+<footer>© 2026 ガントチャート - 工程表</footer>
+</main>
+</body>
+</html>
