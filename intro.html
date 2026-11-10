@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ガントチャート - 工程表</title>
+<meta name="description" content="指でバーを動かして日程を組める、iPhone・iPad・Mac 用のガントチャート（工程表）アプリ。">
+<style>
+:root{--bg:#fff;--fg:#1c1c1e;--sub:#6c6c70;--card:#f2f2f7;--accent:#2a7bdc;--line:#e5e5ea}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f2f2f7;--sub:#98989d;--card:#1c1c1e;--accent:#4a9bff;--line:#2c2c2e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif}
+main{max-width:880px;margin:0 auto;padding:0 16px 48px}
+header{text-align:center;padding:56px 0 32px}
+header img{width:112px;height:112px;border-radius:25%;box-shadow:0 4px 16px rgba(0,0,0,.18)}
+h1{font-size:2rem;margin:20px 0 8px}
+.lead{color:var(--sub);margin:0 auto 24px;max-width:34em}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:12px 28px;border-radius:999px;font-weight:600}
+h2{font-size:1.35rem;margin:48px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.shots figure{margin:0;text-align:center}
+.shots img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+figcaption{font-size:.85rem;color:var(--sub);margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.card{background:var(--card);border-radius:14px;padding:16px 18px}
+.card h3{margin:0 0 4px;font-size:1rem}
+.card p{margin:0;color:var(--sub);font-size:.92rem}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{border-bottom:1px solid var(--line);padding:10px 8px;text-align:left;vertical-align:top}
+th{color:var(--sub);font-weight:600}
+.note{color:var(--sub);font-size:.85rem}
+footer{margin-top:48px;text-align:center;color:var(--sub);font-size:.9rem}
+footer a,.note a{color:var(--accent)}
+@media (max-width:560px){.shots{grid-template-columns:1fr 1fr 1fr;gap:6px}figcaption{font-size:.7rem}}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <img src="assets/icon.png" alt="ガントチャートのアプリアイコン">
+  <h1>ガントチャート - 工程表</h1>
+  <p class="lead">指でバーを動かして、日程をそのまま組み替えられる工程表アプリ。iPhone・iPad・Mac で使えます。</p>
+  <a class="btn" href="https://apps.apple.com/jp/app/id6816038134">App Store で見る</a>
+</header>
+
+<section class="shots" aria-label="画面">
+  <figure><img src="assets/shot-gantt.png" alt="ガントチャートの画面" loading="lazy"><figcaption>ガントチャート</figcaption></figure>
+  <figure><img src="assets/shot-list.png" alt="タスク一覧の画面" loading="lazy"><figcaption>リスト表示</figcaption></figure>
+  <figure><img src="assets/shot-pdfs.png" alt="PDF一覧の画面" loading="lazy"><figcaption>PDFの添付（プロ）</figcaption></figure>
+</section>
+
+<h2>できること</h2>
+<div class="grid">
+  <div class="card"><h3>ドラッグで日程を調整</h3><p>バーを長押ししてドラッグで移動、両端のドラッグで期間を変更。日・週・月の表示を切り替えられます。</p></div>
+  <div class="card"><h3>進み具合がひと目で分かる</h3><p>完了チェック、進捗率、マイルストーン、担当者、メモ。遅れているタスクは目立つ色でお知らせします。</p></div>
+  <div class="card"><h3>チェックリストとリマインド</h3><p>タスクごとのチェックリストと、期限前の通知で抜け漏れを防ぎます。</p></div>
+  <div class="card"><h3>Google ドライブで共有</h3><p>プロジェクトを Google ドライブ経由で共有して、メンバーと同じ工程表を見られます（プレミアム）。</p></div>
+  <div class="card"><h3>CSV の読み込み・書き出し</h3><p>Excel 向けに書き出したり、列の割り当てとプレビューを見ながら読み込めます（プロ）。</p></div>
+  <div class="card"><h3>PDF・画像を添付</h3><p>図面や資料の PDF、写真をプロジェクトに添付して、その場で開けます（プロ）。PDF はその端末の中だけに保存されます。</p></div>
+  <div class="card"><h3>日程のロックとテンプレート</h3><p>動かしたくない日程をロックできます（プレミアム・プロ）。仕事・暮らし・学びの 16 種類のテンプレートから始めることもできます（プロ）。</p></div>
+  <div class="card"><h3>9 言語に対応</h3><p>日本語・英語・ドイツ語・スペイン語・フランス語・韓国語・ポルトガル語（ブラジル）・中国語（簡体字・繁体字）。ダークモードにも対応しています。</p></div>
+</div>
+
+<h2>プランと料金</h2>
+<table>
+  <thead><tr><th>プラン</th><th>内容</th></tr></thead>
+  <tbody>
+    <tr><td>無料</td><td>ガントチャートの作成・編集、チェックリスト、リマインド通知</td></tr>
+    <tr><td>プレミアム（買い切り）</td><td>Google ドライブでの共有、日程のロック など</td></tr>
+    <tr><td>プロ（買い切り）</td><td>プレミアムの内容に加えて、CSV の読み込み・書き出し、画像の拡大と共有、PDF の添付、テンプレート 16 種類</td></tr>
+  </tbody>
+</table>
+<p class="note">料金は App Store の商品ページでご確認ください。Mac 版ではプロのみ販売しています。課金はすべて買い切りで、定期購読はありません。</p>
+
+<h2>動作環境</h2>
+<p>iPhone・iPad：iOS 18 以降　／　Mac：Mac 版アプリ（App Store で配信）</p>
+
+<footer>
+  <p><a href="https://apps.apple.com/jp/app/id6816038134">App Store</a> ・
+  <a href="index.html">サポート</a> ・
+  <a href="privacy.html">プライバシーポリシー</a></p>
+</footer>
+</main>
+</body>
+</html>
