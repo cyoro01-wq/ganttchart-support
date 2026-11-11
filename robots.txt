@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cyoro01-wq.github.io/ganttchart-support/sitemap.xml
