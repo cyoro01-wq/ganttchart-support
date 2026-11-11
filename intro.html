@@ -44,7 +44,7 @@
       "@type": "FAQPage",
       "mainEntity": [
         {"@type": "Question", "name": "無料で使えますか？",
-         "acceptedAnswer": {"@type": "Answer", "text": "ガントチャートの作成・編集、チェックリスト、リマインド通知は無料で使えます。共有や CSV などの機能は、買い切りのアプリ内課金（プレミアム・プロ）で追加できます。定期購読はありません。"}},
+         "acceptedAnswer": {"@type": "Answer", "text": "ガントチャートの作成・編集、チェックリスト、リマインド通知は無料で使えます。共有や CSV などの機能は、買い切りのアプリ内課金（プレミアム・プロ）で追加できます。定期購読はありません。料金は、プレミアム ¥500、プロ ¥900、プレミアムからプロへのアップグレード ¥500（日本の App Store）です。"}},
         {"@type": "Question", "name": "データはどこに保存されますか？",
          "acceptedAnswer": {"@type": "Answer", "text": "プロジェクトのデータはお使いの端末の中に保存されます。Google ドライブで共有したときだけ、共有ファイルとしてドライブに保存されます。添付した PDF は端末の中だけに保存され、共有の相手には送られません。"}},
         {"@type": "Question", "name": "Mac でも使えますか？",
@@ -95,6 +95,7 @@ figcaption{font-size:.9rem;color:var(--sub);margin-top:12px;font-weight:600}
 .card .ico{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:1.4rem;background:linear-gradient(135deg,var(--accent),var(--accent2));margin-bottom:12px}
 .card h3{margin:0 0 6px;font-size:1.05rem}
 .card p{margin:0;color:var(--sub);font-size:.93rem}
+td:nth-child(2){white-space:nowrap}
 .tag{display:inline-block;font-size:.7rem;font-weight:700;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:0 6px;margin-left:6px;vertical-align:middle}
 table{width:100%;border-collapse:collapse;background:var(--surface);border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}
 th,td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);font-size:.93rem}
@@ -175,20 +176,21 @@ footer{text-align:center;color:var(--sub);font-size:.88rem;padding:32px 0 48px}
   <h2>プランと料金</h2>
   <p class="sec-lead">どのプランも買い切り。定期購読はありません。</p>
   <table>
-    <thead><tr><th>プラン</th><th>内容</th></tr></thead>
+    <thead><tr><th>プラン</th><th>料金（日本）</th><th>内容</th></tr></thead>
     <tbody>
-      <tr><td>無料</td><td>ガントチャートの作成・編集、チェックリスト、リマインド通知</td></tr>
-      <tr><td>プレミアム</td><td>Google ドライブでの共有、日程のロック など</td></tr>
-      <tr><td>プロ</td><td>プレミアムの内容に加えて、CSV の読み込み・書き出し、画像の拡大と共有、PDF の添付、テンプレート 16 種類</td></tr>
+      <tr><td>無料</td><td>¥0</td><td>ガントチャートの作成・編集、チェックリスト、リマインド通知</td></tr>
+      <tr><td>プレミアム</td><td>¥500（買い切り）</td><td>Google ドライブでの共有、日程のロック など</td></tr>
+      <tr><td>プロ</td><td>¥900（買い切り）</td><td>プレミアムの内容に加えて、CSV の読み込み・書き出し、画像の拡大と共有、PDF の添付、テンプレート 16 種類</td></tr>
+      <tr><td>プロへのアップグレード</td><td>¥500（買い切り）</td><td>プレミアムを購入済みの方が、プロに上げるときの価格です</td></tr>
     </tbody>
   </table>
-  <p class="note">料金は App Store の商品ページでご確認ください。Mac 版ではプロのみ販売しています。</p>
+  <p class="note">表示は日本の App Store の価格（税込）です。国・地域によって異なります。最新の価格は App Store の商品ページでご確認ください。Mac 版ではプロのみ販売しています。</p>
 </section>
 
 <section class="wrap" id="faq">
   <h2>よくある質問</h2>
   <p class="sec-lead">&nbsp;</p>
-  <details><summary>無料で使えますか？</summary><p>ガントチャートの作成・編集、チェックリスト、リマインド通知は無料で使えます。共有や CSV などの機能は、買い切りのアプリ内課金（プレミアム・プロ）で追加できます。定期購読はありません。</p></details>
+  <details><summary>無料で使えますか？</summary><p>ガントチャートの作成・編集、チェックリスト、リマインド通知は無料で使えます。共有や CSV などの機能は、買い切りのアプリ内課金（プレミアム・プロ）で追加できます。定期購読はありません。料金は、プレミアム ¥500、プロ ¥900、プレミアムからプロへのアップグレード ¥500 です（日本の App Store）。</p></details>
   <details><summary>データはどこに保存されますか？</summary><p>プロジェクトのデータはお使いの端末の中に保存されます。Google ドライブで共有したときだけ、共有ファイルとしてドライブに保存されます。添付した PDF は端末の中だけに保存され、共有の相手には送られません。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p></details>
   <details><summary>Mac でも使えますか？</summary><p>Mac 版アプリを App Store で配信しています。Mac ではプロのみの販売です。</p></details>
   <details><summary>対応している OS は？</summary><p>iPhone・iPad は iOS 18 以降に対応しています。</p></details>
